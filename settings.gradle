@@ -20,5 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "PayMark"
-include(":app")
- 
+include ':app'

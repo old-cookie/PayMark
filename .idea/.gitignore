@@ -1,0 +1,5 @@
+# 預設忽略的檔案
+/shelf/
+/workspace.xml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions
