@@ -2,28 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <Spinner
-        android:id="@+id/expenseTypeSpinner"
+        android:id="@+id/type_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/priceEditText"
+        android:id="@+id/price_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="Price" />
+        android:inputType="numberDecimal" />
 
-    <!-- Add other input fields for date, time, and extra information -->
+    <EditText
+        android:id="@+id/info_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="Save" />
 
 </LinearLayout>
