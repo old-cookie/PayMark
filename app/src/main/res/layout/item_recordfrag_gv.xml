@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the record fragment grid view item. It is a LinearLayout with a vertical orientation and padding of 5dp. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <!-- This ImageView is used to display an icon. It occupies the entire width of the parent LinearLayout and adjusts its height to the content. -->
+    <ImageView
+        android:id="@+id/item_recordfrag_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- This TextView is used to display a label. It occupies the entire width of the parent LinearLayout and is placed below the ImageView with a margin top of 5dp.
+         It centers the text horizontally. By default, the text is empty. The text color is grey (hex color code: #7D7D7D) and the text size is 12sp. -->
+    <TextView
+        android:id="@+id/item_recordfrag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/grey_7D7D7D"
+        android:textSize="12sp" />
+</LinearLayout>

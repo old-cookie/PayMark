@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the More Dialog. It is a vertical LinearLayout. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- This LinearLayout contains three buttons for About, Setting, and History Record. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- This Button triggers the About action. -->
+        <Button
+            android:id="@+id/dialog_more_btn_about"
+            style="@style/dialogmoreStyle"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/it_about"
+            android:text="@string/about" />
+
+        <!-- This Button triggers the Setting action. -->
+        <Button
+            android:id="@+id/dialog_more_btn_setting"
+            style="@style/dialogmoreStyle"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableTop="@mipmap/it_setting"
+            android:text="@string/setting" />
+
+        <!-- This Button triggers the History Record action. -->
+        <Button
+            android:id="@+id/dialog_more_btn_record"
+            style="@style/dialogmoreStyle"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/it_record"
+            android:text="@string/history_record" />
+    </LinearLayout>
+
+    <!-- This LinearLayout contains a button for Account Info. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- This Button triggers the Account Info action. -->
+        <Button
+            android:id="@+id/dialog_more_btn_info"
+            style="@style/dialogmoreStyle"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:drawableTop="@mipmap/it_detail"
+            android:text="@string/account_info" />
+    </LinearLayout>
+
+</LinearLayout>

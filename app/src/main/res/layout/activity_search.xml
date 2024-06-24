@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the Search activity. It is a vertical LinearLayout. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical">
+
+    <!-- This RelativeLayout contains the back button and a search EditText. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!-- This is the back button. When clicked, it triggers the onClick method. -->
+        <ImageView
+            android:id="@+id/search_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:src="@mipmap/it_back" />
+
+        <!-- This is the search EditText. It is used to input the search query. -->
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/search_iv_back"
+            android:hint="@string/please_search_info"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <!-- This is the search button. When clicked, it triggers the onClick method. -->
+        <ImageView
+            android:id="@+id/search_iv_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:onClick="onClick"
+            android:src="@mipmap/search" />
+    </RelativeLayout>
+
+    <!-- This ListView displays the search results. -->
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey_f3f3f3"
+        android:dividerHeight="6dp" />
+
+    <!-- This TextView is displayed when there are no search results. -->
+    <TextView
+        android:id="@+id/search_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="@string/date_empty"
+        android:textSize="20sp"
+        app:drawableTopCompat="@mipmap/it_searchtext" />
+</LinearLayout>

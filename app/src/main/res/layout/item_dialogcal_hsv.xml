@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the dialog calendar item. It is a LinearLayout with a vertical orientation. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This TextView is used to display the year. It has a margin of 5dp and padding of 20dp on the left and right, and 8dp on the top and bottom. -->
+    <TextView
+        android:id="@+id/item_dialogcal_hsv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="8dp"
+        android:text="@string/ex_year" />
+</LinearLayout>

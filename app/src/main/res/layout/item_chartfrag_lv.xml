@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the chart fragment item. It is a RelativeLayout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- This ImageView is used to display an icon. -->
+    <ImageView
+        android:id="@+id/item_chartfrag_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <!-- This TextView displays the type of the item. It is centered vertically and placed to the end of the ImageView with a margin start of 10dp. -->
+    <TextView
+        android:id="@+id/item_chartfrag_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/item_chartfrag_iv"
+        android:text="@string/ex_type"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- This TextView displays the percentage of the item. It is centered in the parent RelativeLayout. -->
+    <TextView
+        android:id="@+id/item_chartfrag_tv_pert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/ex_percent"
+        android:textSize="16sp" />
+
+    <!-- This TextView displays the sum of the item. It is centered vertically and aligned to the end of the parent RelativeLayout. -->
+    <TextView
+        android:id="@+id/item_chartfrag_tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ex_expense"
+        android:textSize="16sp" />
+</RelativeLayout>

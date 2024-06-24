@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for a custom keyboard. It is a Keyboard layout with a horizontal gap of 1px, key width of 25% of the parent, key height of 50dp, and a vertical gap of 1px. -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1px"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:verticalGap="1px">
+
+    <!-- This is the first row of the keyboard. It contains four keys: 1, 2, 3, and a delete key. -->
+    <Row>
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="-5"
+            android:keyLabel="@string/key_del" />
+    </Row>
+
+    <!-- This is the second row of the keyboard. It contains four keys: 4, 5, 6, and an ensure key. The ensure key has a height of 150dp. -->
+    <Row>
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="-4"
+            android:keyHeight="150dp"
+            android:keyLabel="@string/ensure" />
+    </Row>
+
+    <!-- This is the third row of the keyboard. It contains three keys: 7, 8, and 9. -->
+    <Row>
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+    </Row>
+
+    <!-- This is the fourth row of the keyboard. It contains three keys: a clear key, 0, and a decimal point. -->
+    <Row>
+        <Key
+            android:codes="-3"
+            android:keyLabel="@string/key_clear" />
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+        <Key
+            android:codes="46"
+            android:keyLabel="." />
+    </Row>
+</Keyboard>

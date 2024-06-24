@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/forum" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="327dp"
+            android:layout_height="45dp"
+            android:text=" Forum"
+            android:textColor="#6FBF73"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="13dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Search For..."
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:id="@+id/enter"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#6FBF73"
+            android:entries="@array/options" />
+
+        <ImageView
+            android:id="@+id/orderby"
+            android:layout_width="64dp"
+            android:layout_height="24dp"
+            android:src="@drawable/order" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="#FFB6C1"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/bell"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="#FFB6C1"
+            android:src="@drawable/bells" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="#FFB6C1"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="#FFB6C1"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the chart fragment item. It is a RelativeLayout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- This BarChart is used to display the chart. It occupies the entire width of the parent RelativeLayout and has a fixed height of 300dp. -->
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/item_chartfrag_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!-- This TextView is used to display a message when there is no data. It occupies the entire space of the RelativeLayout,
+         centered both horizontally and vertically. By default, it is not visible (android:visibility="gone"). -->
+    <TextView
+        android:id="@+id/item_chartfrag_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:text="@string/not_data"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

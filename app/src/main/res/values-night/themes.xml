@@ -1,3 +1,4 @@
 <resources>
-    <style name="Base.Theme.PayMark" parent="Theme.MaterialComponents.DayNight.DarkActionBar" />
+    <style name="Base.Theme.PayMark" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
 </resources>

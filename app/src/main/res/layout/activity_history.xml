@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the History activity. It is a vertical LinearLayout. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical">
+
+    <!-- This RelativeLayout contains the back button, the title of the activity, and a calendar button. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!-- This is the back button. When clicked, it triggers the onClick method. -->
+        <ImageView
+            android:id="@+id/history_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:src="@mipmap/it_back" />
+
+        <!-- This is the title of the activity. It is centered in the parent layout. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/history_record"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- This is the calendar button. When clicked, it triggers the onClick method. -->
+        <ImageView
+            android:id="@+id/history_iv_rili"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:onClick="onClick"
+            android:src="@mipmap/it_cal" />
+    </RelativeLayout>
+
+    <!-- This RelativeLayout contains the date and history information. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- This TextView displays the date. -->
+        <TextView
+            android:id="@+id/history_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_date" />
+
+        <!-- This TextView displays the history information. -->
+        <TextView
+            android:id="@+id/history_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/history_info"
+            android:textColor="@color/green_006400" />
+    </RelativeLayout>
+
+    <!-- This ListView displays the history records. -->
+    <ListView
+        android:id="@+id/history_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:padding="10dp" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a shape drawable that defines a rectangle with rounded corners and a solid green fill. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Defines the fill color for the rectangle. -->
+    <solid android:color="@color/green_006400"/>
+    <!-- Defines the radius for the corners of the rectangle. -->
+    <corners android:radius="20dp"/>
+</shape>

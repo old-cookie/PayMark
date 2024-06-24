@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the Time Dialog. It is a vertical LinearLayout. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- This DatePicker is used to select a date. -->
+    <DatePicker
+        android:id="@+id/dialog_time_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- This TextView displays a message to the user to input the time. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/please_input_time" />
+
+    <!-- This LinearLayout contains two EditText fields for inputting the hour and minute. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- This EditText is used to input the hour. -->
+        <EditText
+            android:id="@+id/dialog_time_et_hour"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <!-- This TextView acts as a separator between the hour and minute fields. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- This EditText is used to input the minute. -->
+        <EditText
+            android:id="@+id/dialog_time_et_minute"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2" />
+    </LinearLayout>
+
+    <!-- This LinearLayout contains two buttons for canceling and confirming the time. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <!-- This Button acts as a cancel button for the dialog. -->
+        <Button
+            android:id="@+id/dialog_time_btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:text="@string/cancel"
+            android:textColor="@color/green_006400" />
+
+        <!-- This Button acts as a confirmation button for the dialog. -->
+        <Button
+            android:id="@+id/dialog_time_btn_ensure"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:text="@string/ensure"
+            android:textColor="@color/green_006400" />
+    </LinearLayout>
+</LinearLayout>

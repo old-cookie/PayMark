@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the Budget Dialog. It is a RelativeLayout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- This TextView displays the title of the dialog. -->
+    <TextView
+        android:id="@+id/dialog_budget_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/set_budget"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- This ImageView acts as a close button for the dialog. -->
+    <ImageView
+        android:id="@+id/dialog_budget_iv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ih_error" />
+
+    <!-- This TextView displays the currency symbol. -->
+    <TextView
+        android:id="@+id/dialog_budget_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_budget_tv1"
+        android:layout_marginTop="10dp"
+        android:text="$"
+        android:textSize="20sp" />
+
+    <!-- This EditText is used to input the budget amount. -->
+    <EditText
+        android:id="@+id/dialog_budget_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/dialog_budget_tv2"
+        android:layout_toEndOf="@id/dialog_budget_tv2"
+        android:background="@color/white"
+        android:inputType="numberDecimal">
+
+        <requestFocus />
+    </EditText>
+
+    <!-- This Button acts as a confirmation button for the dialog. -->
+    <Button
+        android:id="@+id/dialog_budget_btn_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_budget_tv2"
+        android:layout_marginTop="20dp"
+        android:text="@string/ensure"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

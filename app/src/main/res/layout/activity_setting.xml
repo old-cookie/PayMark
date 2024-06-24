@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the Setting activity. It is a vertical LinearLayout. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical">
+
+    <!-- This RelativeLayout contains the back button and the title of the activity. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!-- This is the back button. When clicked, it triggers the onClick method. -->
+        <ImageView
+            android:id="@+id/setting_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:src="@mipmap/it_back" />
+
+        <!-- This is the title of the activity. It is centered in the parent layout. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- This TextView acts as a button for clearing all settings. When clicked, it triggers the onClick method. -->
+    <TextView
+        android:id="@+id/setting_tv_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:text="@string/clear_all"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- This View acts as a divider line. -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_7D7D7D" />
+</LinearLayout>

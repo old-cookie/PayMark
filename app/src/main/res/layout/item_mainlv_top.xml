@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the main list view item. It is a LinearLayout with a vertical orientation and a grey background. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical">
+
+    <!-- This RelativeLayout contains the top section of the list view item, including two TextViews and an ImageView. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <!-- This TextView displays the total monthly expense. -->
+        <TextView
+            android:id="@+id/item_mainlv_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_out" />
+
+        <!-- This TextView displays the total monthly expense amount. It is placed below the previous TextView with a margin top of 10dp. -->
+        <TextView
+            android:id="@+id/item_mainlv_top_tv_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_tv1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="$ 0"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- This ImageView is used to display a show/hide icon. It is aligned to the top of the previous TextView and to the end of the parent RelativeLayout. -->
+        <ImageView
+            android:id="@+id/item_mainlv_top_iv_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_mainlv_top_tv_out"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ih_show" />
+
+        <!-- This TextView displays the total monthly income. It is placed below the second TextView. -->
+        <TextView
+            android:id="@+id/item_mainlv_top_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_tv_out"
+            android:text="@string/month_in" />
+
+        <!-- This TextView displays the total monthly income amount. It is placed to the end of the previous TextView with a margin start of 5dp. -->
+        <TextView
+            android:id="@+id/item_mainlv_top_tv_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_tv_out"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/item_mainlv_top_tv2"
+            android:text="$ 0"
+            android:textColor="@color/black" />
+
+        <!-- This TextView displays the budget amount. It is aligned to the bottom of the previous TextView and to the end of the parent RelativeLayout with a margin start of 5dp. -->
+        <TextView
+            android:id="@+id/item_mainlv_top_tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_mainlv_top_tv2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:text="$ 0"
+            android:textColor="@color/black" />
+
+        <!-- This TextView displays the word "budget". It is aligned to the bottom of the previous TextView and to the start of the budget amount TextView. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_mainlv_top_tv2"
+            android:layout_toStartOf="@id/item_mainlv_top_tv_budget"
+            android:text="@string/budget" />
+    </RelativeLayout>
+
+    <!-- This TextView displays the total daily expense and income. It is placed below the RelativeLayout with a margin top of 20dp and a margin bottom of 10dp. -->
+    <TextView
+        android:id="@+id/item_mainlv_top_tv_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/today_expense_income"
+        android:textStyle="bold" />
+</LinearLayout>

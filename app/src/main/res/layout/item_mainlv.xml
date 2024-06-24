@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the main list view item. It is a RelativeLayout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- This ImageView is used to display an icon. -->
+    <ImageView
+        android:id="@+id/item_mainlv_iv"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+
+    <!-- This LinearLayout contains two TextViews for the title and comment. It is placed to the end of the ImageView with a margin start of 10dp. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/item_mainlv_iv"
+        android:orientation="vertical">
+
+        <!-- This TextView displays the title. -->
+        <TextView
+            android:id="@+id/item_mainlv_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_type"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- This TextView displays the comment. It is placed below the title with a margin top of 5dp. -->
+        <TextView
+            android:id="@+id/item_mainlv_tv_beizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ex_comment"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- This LinearLayout contains two TextViews for the money and time. It is aligned to the end of the parent RelativeLayout. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <!-- This TextView displays the money. -->
+        <TextView
+            android:id="@+id/item_mainlv_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_expense"
+            android:textStyle="bold" />
+
+        <!-- This TextView displays the time. It is placed below the money with a margin top of 5dp. -->
+        <TextView
+            android:id="@+id/item_mainlv_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ex_time" />
+    </LinearLayout>
+</RelativeLayout>

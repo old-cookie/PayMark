@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the root layout for the Outcome Fragment. It is a RelativeLayout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3">
+
+    <!-- This RelativeLayout contains the top section of the fragment, including an ImageView, TextView, and EditText. -->
+    <RelativeLayout
+        android:id="@+id/frag_record_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <!-- This ImageView displays an icon. -->
+        <ImageView
+            android:id="@+id/frag_record_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_other_fs" />
+
+        <!-- This TextView displays the type of record. -->
+        <TextView
+            android:id="@+id/frag_record_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/frag_record_iv"
+            android:text="@string/type_other"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- This EditText is used to input the amount of money. -->
+        <EditText
+            android:id="@+id/frag_record_et_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <!-- This View acts as a separator line. -->
+    <View
+        android:id="@+id/frag_record_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/frag_record_rl_top"
+        android:background="@color/grey_f3f3f3" />
+
+    <!-- This GridView displays a grid of options. -->
+    <GridView
+        android:id="@+id/frag_record_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_record_line1"
+        android:background="@color/white"
+        android:numColumns="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <!-- This KeyboardView provides a custom keyboard for input. -->
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/frag_record_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/grey_f3f3f3"
+        android:keyTextColor="@color/black"
+        android:paddingTop="1dp"
+        android:shadowColor="@color/white"
+        android:shadowRadius="0.0" />
+
+    <!-- This RelativeLayout contains the bottom section of the fragment, including two TextViews. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/frag_record_keyboard"
+        android:background="@color/white">
+
+        <!-- This TextView displays the time. -->
+        <TextView
+            android:id="@+id/frag_record_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="@string/ex_date_time" />
+
+        <!-- This TextView prompts the user to add a comment. -->
+        <TextView
+            android:id="@+id/frag_record_tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/frag_record_tv_time"
+            android:padding="10dp"
+            android:text="@string/add_comment" />
+    </RelativeLayout>
+</RelativeLayout>
