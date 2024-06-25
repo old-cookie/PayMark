@@ -5,9 +5,8 @@ import android.app.Application;
 import vtc.oldcookie.paymark.db.DBManager;
 
 /**
- * Application class for the PayMarkV2 application.
+ * Application class for the PayMark application.
  * This class is used to initialize the database when the application starts.
- * LAU Cho Cheuk
  */
 public class UniteApp extends Application {
     /**

@@ -15,7 +15,6 @@ import vtc.oldcookie.paymark.db.ChartItemBean;
 
 /**
  * Adapter for displaying chart items in a ListView.
- * CHANG Wing Sze
  */
 public class ChartItemAdapter extends BaseAdapter {
     private final List<ChartItemBean> mDatas;

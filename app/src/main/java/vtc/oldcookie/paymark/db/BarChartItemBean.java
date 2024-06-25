@@ -2,7 +2,6 @@ package vtc.oldcookie.paymark.db;
 
 /**
  * Class representing an item in a bar chart.
- * LAU Cho Cheuk
  */
 public class BarChartItemBean {
     private final int year;

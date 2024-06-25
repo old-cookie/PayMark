@@ -12,7 +12,6 @@ import vtc.oldcookie.paymark.utils.FloatUtils;
 
 /**
  * Class for managing database operations.
- * LEE Ho Fung
  */
 public class DBManager {
     private static SQLiteDatabase db;

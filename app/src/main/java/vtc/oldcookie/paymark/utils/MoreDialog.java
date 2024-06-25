@@ -12,7 +12,6 @@ import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 
-
 import vtc.oldcookie.paymark.AboutActivity;
 import vtc.oldcookie.paymark.HistoryActivity;
 import vtc.oldcookie.paymark.MonthChartActivity;
@@ -21,7 +20,6 @@ import vtc.oldcookie.paymark.SettingActivity;
 
 /**
  * A dialog for displaying more options.
- * CHANG Wing Sze
  */
 public class MoreDialog extends Dialog implements View.OnClickListener {
 

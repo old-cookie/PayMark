@@ -14,10 +14,8 @@ import androidx.annotation.NonNull;
 
 import vtc.oldcookie.paymark.R;
 
-
 /**
  * A dialog for selecting time in the record page.
- * CHANG Wing Sze
  */
 public class SelectTimeDialog extends Dialog implements View.OnClickListener {
     EditText hourEt, minuteEt;

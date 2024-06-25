@@ -20,7 +20,6 @@ import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Activity class for the Search page.
- * CHANG Wing Sze
  */
 public class SearchActivity extends AppCompatActivity {
     ListView searchLv;

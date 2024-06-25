@@ -15,10 +15,8 @@ import vtc.oldcookie.paymark.db.AccountBean;
 
 /**
  * Adapter for displaying account information in a ListView.
- * CHANG Wing Sze
  */
 public class AccountAdapter extends BaseAdapter {
-    private final Context context;
     private final List<AccountBean> mDatas;
     private final LayoutInflater inflater;
 
@@ -29,7 +27,6 @@ public class AccountAdapter extends BaseAdapter {
      * @param mDatas  the data to be displayed in the ListView
      */
     public AccountAdapter(Context context, List<AccountBean> mDatas) {
-        this.context = context;
         this.mDatas = mDatas;
         inflater = LayoutInflater.from(context);
     }
@@ -71,7 +68,7 @@ public class AccountAdapter extends BaseAdapter {
         bean = mDatas.get(position);
         holder.typeIv.setImageResource(bean.getsImageId());
         holder.typeTv.setText(bean.getTypename());
-        holder.beizhuTv.setText(bean.getComment());
+        holder.commentTv.setText(bean.getComment());
         holder.moneyTv.setText("$ " + bean.getMoney());
         holder.timeTv.setText(bean.getTime());
         return convertView;
@@ -82,7 +79,7 @@ public class AccountAdapter extends BaseAdapter {
      */
     class ViewHolder {
         ImageView typeIv;
-        TextView typeTv, beizhuTv, timeTv, moneyTv;
+        TextView typeTv, commentTv, timeTv, moneyTv;
 
         /**
          * Constructor for the ViewHolder.
@@ -93,7 +90,7 @@ public class AccountAdapter extends BaseAdapter {
             typeIv = view.findViewById(R.id.item_mainlv_iv);
             typeTv = view.findViewById(R.id.item_mainlv_tv_title);
             timeTv = view.findViewById(R.id.item_mainlv_tv_time);
-            beizhuTv = view.findViewById(R.id.item_mainlv_tv_beizhu);
+            commentTv = view.findViewById(R.id.item_mainlv_tv_comment);
             moneyTv = view.findViewById(R.id.item_mainlv_tv_money);
         }
     }

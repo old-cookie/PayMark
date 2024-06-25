@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * Adapter for managing fragments in a ViewPager.
- * CHANG Wing Sze
  */
 public class ChartVPAdapter extends FragmentPagerAdapter {
     private final List<Fragment> fragmentList;

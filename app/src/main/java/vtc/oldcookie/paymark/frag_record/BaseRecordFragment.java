@@ -21,7 +21,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.R;
 import vtc.oldcookie.paymark.db.AccountBean;
 import vtc.oldcookie.paymark.db.TypeBean;
@@ -31,7 +30,6 @@ import vtc.oldcookie.paymark.utils.SelectTimeDialog;
 
 /**
  * Base class for record fragments.
- * LEE Ho Fung
  */
 public abstract class BaseRecordFragment extends Fragment implements View.OnClickListener {
 

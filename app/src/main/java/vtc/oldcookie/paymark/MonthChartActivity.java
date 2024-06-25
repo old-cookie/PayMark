@@ -14,25 +14,26 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.adapter.ChartVPAdapter;
 import vtc.oldcookie.paymark.db.DBManager;
-import vtc.oldcookie.paymark.frag_chart.IncomChartFragment;
+import vtc.oldcookie.paymark.frag_chart.IncomeChartFragment;
 import vtc.oldcookie.paymark.frag_chart.OutcomeChartFragment;
 import vtc.oldcookie.paymark.utils.CalendarDialog;
 
 /**
  * Activity class for the Month Chart page.
- * LEE Ho Fung
  */
 public class MonthChartActivity extends AppCompatActivity implements View.OnClickListener {
-    Button inBtn, outBtn;
-    TextView dateTv, inTv, outTv;
+    Button inBtn,outBtn;
+    TextView dateTv,inTv,outTv;
     ViewPager chartVp;
-    int year, month;
-    List<Fragment> chartFragList;
-    IncomChartFragment incomChartFragment;
-    OutcomeChartFragment outcomChartFragment;
+    int year;
+    int month;
+    int selectPos = -1,selectMonth =-1;
+    List<Fragment>chartFragList;
+    private IncomeChartFragment incomChartFragment;
+    private OutcomeChartFragment outcomeChartFragment;
+    private ChartVPAdapter chartVPAdapter;
 
     /**
      * Called when the activity is starting.
@@ -61,14 +62,14 @@ public class MonthChartActivity extends AppCompatActivity implements View.OnClic
      */
     private void initFrag() {
         chartFragList = new ArrayList<>();
-        incomChartFragment = new IncomChartFragment();
-        outcomChartFragment = new OutcomeChartFragment();
+        incomChartFragment = new IncomeChartFragment();
+        outcomeChartFragment = new OutcomeChartFragment();
         Bundle bundle = new Bundle();
         bundle.putInt("year", year);
         bundle.putInt("month", month);
         incomChartFragment.setArguments(bundle);
-        outcomChartFragment.setArguments(bundle);
-        chartFragList.add(outcomChartFragment);
+        outcomeChartFragment.setArguments(bundle);
+        chartFragList.add(outcomeChartFragment);
         chartFragList.add(incomChartFragment);
         ChartVPAdapter chartVPAdapter = new ChartVPAdapter(getSupportFragmentManager(), chartFragList);
         chartVp.setAdapter(chartVPAdapter);
@@ -137,13 +138,18 @@ public class MonthChartActivity extends AppCompatActivity implements View.OnClic
      * Shows a dialog to select a date.
      */
     private void showCalendarDialog() {
-        CalendarDialog dialog = new CalendarDialog(this, year, month);
+        CalendarDialog dialog = new CalendarDialog(this, selectPos, selectMonth);
         dialog.show();
         dialog.setDialogSize();
-        dialog.setOnRefreshListener((selPos, year, month) -> {
-            initStatistics(year, month);
-            incomChartFragment.setDate(year, month);
-            outcomChartFragment.setDate(year, month);
+        dialog.setOnRefreshListener(new CalendarDialog.OnRefreshListener() {
+            @Override
+            public void onRefresh(int selPos, int year, int month) {
+                MonthChartActivity.this.selectPos = selPos;
+                MonthChartActivity.this.selectMonth = month;
+                initStatistics(year,month);
+                incomChartFragment.setDate(year,month);
+                outcomeChartFragment.setDate(year,month);
+            }
         });
     }
 

@@ -8,10 +8,8 @@ import androidx.annotation.Nullable;
 
 import vtc.oldcookie.paymark.R;
 
-
 /**
  * Class for managing the SQLite database.
- * LEE Ho Fung
  */
 public class DBOpenHelper extends SQLiteOpenHelper {
     private final Context context;

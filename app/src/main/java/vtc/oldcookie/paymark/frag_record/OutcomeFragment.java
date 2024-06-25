@@ -8,7 +8,6 @@ import vtc.oldcookie.paymark.db.TypeBean;
 
 /**
  * Fragment for recording outcome.
- * LAU Cho Cheuk
  */
 public class OutcomeFragment extends BaseRecordFragment {
 

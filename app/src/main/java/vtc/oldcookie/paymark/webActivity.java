@@ -1,6 +1,7 @@
 package vtc.oldcookie.paymark;
 
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -10,12 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
-
 /**
  * This class represents a web activity in the application.
  * It extends AppCompatActivity, which is a base class for activities that use the support library action bar features.
- * LAU Cho Cheuk
  */
 public class webActivity extends AppCompatActivity {
 
@@ -43,9 +41,13 @@ public class webActivity extends AppCompatActivity {
 
         // Find the WebView by its ID
         WebView webView = findViewById(R.id.web);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setLoadsImagesAutomatically(true);
         // Set a WebViewClient for the WebView
         webView.setWebViewClient(new WebViewClient());
         // Load a web page into the WebView
-        webView.loadUrl("http://100.127.16.92:5000");
+        webView.setInitialScale(150);
+        webView.loadUrl("https://old-cookie.github.io/KnowingFish.html");
     }
 }

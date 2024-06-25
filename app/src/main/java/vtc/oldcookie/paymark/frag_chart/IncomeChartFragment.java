@@ -21,9 +21,8 @@ import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Fragment for displaying income chart.
- * LEE Ho Fung
  */
-public class IncomChartFragment extends BaseChartFragment {
+public class IncomeChartFragment extends BaseChartFragment {
     int kind = 1;
 
     /**

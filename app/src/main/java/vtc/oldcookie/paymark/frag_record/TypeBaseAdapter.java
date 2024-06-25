@@ -12,13 +12,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.R;
 import vtc.oldcookie.paymark.db.TypeBean;
 
 /**
  * Adapter for the type grid view in the record fragment.
- * CHANG Wing Sze
  */
 public class TypeBaseAdapter extends BaseAdapter {
     private final Context context;

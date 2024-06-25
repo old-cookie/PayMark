@@ -5,7 +5,6 @@ import java.math.RoundingMode;
 
 /**
  * Utility class for handling float numbers.
- * LAU Cho Cheuk
  */
 public class FloatUtils {
     /**

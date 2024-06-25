@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.adapter.AccountAdapter;
 import vtc.oldcookie.paymark.db.AccountBean;
 import vtc.oldcookie.paymark.db.DBManager;
@@ -26,7 +25,6 @@ import vtc.oldcookie.paymark.utils.MoreDialog;
 
 /**
  * Main activity class for the application.
- * LEE Ho Fung
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ListView todayLv;

@@ -13,10 +13,8 @@ import androidx.annotation.NonNull;
 
 import vtc.oldcookie.paymark.R;
 
-
 /**
  * A dialog for setting the budget.
- * LAU Cho Cheuk
  */
 public class BudgetDialog extends Dialog implements View.OnClickListener {
     private OnEnsureListener onEnsureListener;

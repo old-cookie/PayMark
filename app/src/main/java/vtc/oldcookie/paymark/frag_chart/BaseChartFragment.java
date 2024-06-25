@@ -23,7 +23,6 @@ import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Base class for chart fragments.
- * LEE Ho Fung
  */
 abstract public class BaseChartFragment extends Fragment {
     ListView chartLv;

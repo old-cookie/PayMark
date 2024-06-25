@@ -12,7 +12,6 @@ import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Activity class for the Setting page.
- * CHANG Wing Sze
  */
 public class SettingActivity extends AppCompatActivity {
     /**

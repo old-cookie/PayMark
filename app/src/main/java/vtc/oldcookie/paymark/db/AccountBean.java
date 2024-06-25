@@ -2,7 +2,6 @@ package vtc.oldcookie.paymark.db;
 
 /**
  * Class representing an account.
- * LEE Ho Fung
  */
 public class AccountBean {
     int id;

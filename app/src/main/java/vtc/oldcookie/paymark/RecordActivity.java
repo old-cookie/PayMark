@@ -18,7 +18,6 @@ import vtc.oldcookie.paymark.frag_record.OutcomeFragment;
 
 /**
  * Activity class for the Record page.
- * CHANG Wing Sze
  */
 public class RecordActivity extends AppCompatActivity {
     /**

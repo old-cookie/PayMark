@@ -14,10 +14,8 @@ import androidx.annotation.NonNull;
 
 import vtc.oldcookie.paymark.R;
 
-
 /**
  * A dialog for entering comments.
- * LAU Cho Cheuk
  */
 public class CommentDialog extends Dialog implements View.OnClickListener {
     private EditText et;

@@ -2,7 +2,6 @@ package vtc.oldcookie.paymark.db;
 
 /**
  * Class representing an item in a chart.
- * LAU Cho Cheuk
  */
 public class ChartItemBean {
     int sImageId;

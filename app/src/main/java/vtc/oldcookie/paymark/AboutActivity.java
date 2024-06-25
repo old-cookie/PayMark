@@ -9,13 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import vtc.oldcookie.paymark.forum.login;
 
-import vtc.oldcookie.paymark.forum.login;
-
-
 /**
  * This class represents the AboutActivity in the application.
  * It extends AppCompatActivity, which is a base class for activities that use the support library action bar features.
- * LAU Cho Cheuk
  */
 public class AboutActivity extends AppCompatActivity {
     /**

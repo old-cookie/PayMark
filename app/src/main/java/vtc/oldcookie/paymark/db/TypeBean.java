@@ -2,7 +2,6 @@ package vtc.oldcookie.paymark.db;
 
 /**
  * Class representing a type of item.
- * LAU Cho Cheuk
  */
 public class TypeBean {
     int id;

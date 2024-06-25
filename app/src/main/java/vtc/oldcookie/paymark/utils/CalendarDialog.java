@@ -18,14 +18,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.R;
 import vtc.oldcookie.paymark.adapter.CalendarAdapter;
 import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * A dialog for selecting a date from a calendar.
- * LEE Ho Fung
  */
 public class CalendarDialog extends Dialog implements View.OnClickListener {
     private List<TextView> hsvViewList;

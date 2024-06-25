@@ -1,12 +1,10 @@
 package vtc.oldcookie.paymark.frag_record;
 
-
 import vtc.oldcookie.paymark.R;
 import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Fragment for recording income.
- * LAU Cho Cheuk
  */
 public class IncomeFragment extends BaseRecordFragment {
 

@@ -32,7 +32,7 @@
 
         <!-- This TextView displays the comment. It is placed below the title with a margin top of 5dp. -->
         <TextView
-            android:id="@+id/item_mainlv_tv_beizhu"
+            android:id="@+id/item_mainlv_tv_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

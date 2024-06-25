@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
 import vtc.oldcookie.paymark.adapter.AccountAdapter;
 import vtc.oldcookie.paymark.db.AccountBean;
 import vtc.oldcookie.paymark.db.DBManager;
@@ -19,7 +18,6 @@ import vtc.oldcookie.paymark.utils.CalendarDialog;
 
 /**
  * Activity class for the History page.
- * LEE Ho Fung
  */
 public class HistoryActivity extends AppCompatActivity {
     ListView historyLv;

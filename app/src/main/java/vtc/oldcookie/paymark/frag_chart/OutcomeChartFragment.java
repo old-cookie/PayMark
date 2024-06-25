@@ -21,7 +21,6 @@ import vtc.oldcookie.paymark.db.DBManager;
 
 /**
  * Fragment for displaying outcome chart.
- * LEE Ho Fung
  */
 public class OutcomeChartFragment extends BaseChartFragment {
     int kind = 0;

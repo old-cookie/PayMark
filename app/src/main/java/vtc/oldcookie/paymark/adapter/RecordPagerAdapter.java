@@ -15,7 +15,6 @@ import vtc.oldcookie.paymark.R;
 
 /**
  * Adapter for managing fragments in a ViewPager with titles.
- * CHANG Wing Sze
  */
 public class RecordPagerAdapter extends FragmentStatePagerAdapter {
     private final List<Fragment> fragmentList;
