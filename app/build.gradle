@@ -5,7 +5,9 @@ plugins {
 android {
     namespace 'vtc.oldcookie.paymark'
     compileSdk 34
-
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
     defaultConfig {
         applicationId "vtc.oldcookie.paymark"
         minSdk 21
@@ -37,6 +39,10 @@ dependencies {
     implementation libs.mpandroidchart
     implementation files('src/main/java/vtc/oldcookie/paymark/libs/org.apache.http.legacy.jar')
     testImplementation libs.junit
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.junit.jupiter
+    testImplementation libs.junit.jupiter
+    androidTestImplementation libs.mockito.android
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
