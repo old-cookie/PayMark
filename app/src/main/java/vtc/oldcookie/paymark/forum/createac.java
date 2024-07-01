@@ -47,7 +47,7 @@ public class createac extends AppCompatActivity {
                 if(!nickname.getText().toString().isEmpty()&&!email.getText().toString().isEmpty() &&
                         !password.getText().toString().isEmpty()&&!confirmpassword.getText().toString().isEmpty()
                         &&password.getText().toString().equals(confirmpassword.getText().toString())) {
-                    final String url = "http://10.0.2.2:8080/osmad/myPhp/createac.php";
+                    final String url = "http://100.64.50.2:8080/osmad/myPhp/createac.php";
                     new MyAsyncTask().execute(url);
                     Toast.makeText(getApplicationContext(), "Created AC", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(createac.this, login.class);

@@ -1,16 +1,16 @@
 [versions]
 agp = "8.5.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
 mockitoCore = "5.12.0"
-mockitoJunitJupiter = "3.12.4"
+mockitoJunitJupiter = "5.12.0"
 mpandroidchart = "v3.1.0"
-junitJupiter = "5.8.1"
+junitJupiter = "5.10.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }

@@ -50,12 +50,12 @@ public class ForumInput extends AppCompatActivity {
 
         listView = findViewById(R.id.listView1);
 
-        final String url = "http://10.0.2.2:8080/osmad/myPhp/forum.php";
+        final String url = "http://100.64.50.2:8080/osmad/myPhp/forum.php";
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String url = "http://10.0.2.2:8080/osmad/myPhp/recommend.php";
+                final String url = "http://100.64.50.2:8080/osmad/myPhp/recommend.php";
                 new MyAsyncTask().execute(url);
                 Intent intent = new Intent(ForumInput.this, Forum.class);
                 intent.putExtra("nickname", nickname);

@@ -41,7 +41,7 @@ public class Forum extends AppCompatActivity {
 
         listView = findViewById(R.id.listView1);
 
-        final String url = "http://10.0.2.2:8080/osmad/myPhp/forum.php";
+        final String url = "http://100.64.50.2:8080/osmad/myPhp/forum.php";
 
         ImageView add = findViewById(R.id.add);
 

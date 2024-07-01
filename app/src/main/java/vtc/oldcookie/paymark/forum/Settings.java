@@ -52,13 +52,13 @@ public class Settings extends AppCompatActivity {
         String nicknamee = getIntent().getStringExtra("nickname"); //get nickname
         nickname.setText(nicknamee);
 
-        final String url = "http://10.0.2.2:8080/osmad/myPhp/rating.php";
+        final String url = "http://100.64.50.2:8080/osmad/myPhp/rating.php";
         new MyAsyncTask().execute(url);
 
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String url = "http://192.168.56.1:8080/osmad/myPhp/rename.php";
+                final String url = "http://100.64.50.2:8080/osmad/myPhp/rename.php";
                 new MyAsyncTask().execute(url);
                 Toast.makeText(getApplicationContext(), "Renamed!", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Settings.this, login.class);
@@ -81,7 +81,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 myDBAdapter.deleteAllRecords(); //delete like data
-                final String url = "http://10.0.2.2:8080/osmad/myPhp/delete.php";
+                final String url = "http://100.64.50.2:8080/osmad/myPhp/delete.php";
                 new MyAsyncTask().execute(url);
                 Toast.makeText(getApplicationContext(), "Account Deleted!", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Settings.this, login.class);

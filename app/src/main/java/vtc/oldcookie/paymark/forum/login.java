@@ -47,7 +47,7 @@ public class login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String url = "http://10.0.2.2:8080/osmad/myPhp/login.php";
+                final String url = "http://100.64.50.2:8080/osmad/myPhp/login.php";
                 new MyAsyncTask().execute(url);
             }
         });

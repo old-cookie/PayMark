@@ -46,7 +46,7 @@ public class recommand extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String url = "http://10.0.2.2:8080/osmad/myPhp/recommend.php";
+                final String url = "http://100.64.50.2:8080/osmad/myPhp/recommend.php";
                 new MyAsyncTask().execute(url);
                 Intent intent = new Intent(recommand.this, Forum.class);
                 intent.putExtra("nickname", nickname);
